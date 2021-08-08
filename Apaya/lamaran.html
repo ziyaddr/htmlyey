@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p {text-align: justify;
+        font-family: Verdana;}
+        #link {font-size: 50%;
+        cursor: pointer}
+        .hidden {display:none}
+        .show {display: block}
+        #tidak:hover {position: relative;
+        bottom: 100px;}
+        
+        button {font-size: 125%}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body style="background-color:#f7f7f7;">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-2 col-sm-2 col-lg-2"></div>
+            <div class="col-md-8 col-sm-8 col-lg-8">
+                <h1 class>You have a message!&ensp;<a id="link" onClick="show(this)">Read</a></h1>
+                
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-2"></div>    
+        </div>
+
+   
+        <div id="message" class="hidden">
+            <div class="row">
+            <div class="col-md-2 col-sm-2 col-lg-2"></div>
+            <div class=" col-md-8 col-sm-8 col-lg-8 border" style = "background: -webkit-linear-gradient(90deg, #e8e8e8 10%, #f2f2f2 90%); /* Chrome 10+, Saf5.1+ */; padding: 20px">
+                <h3 class="text-center"><small class="text-muted">Sebuah surat</small></h3>
+                <p style="margin-top:40px">Dari: Ziyad Dhia Rafi, NIM 16520263 eh 13520064</p>
+                <p>Untuk: Patricia Aurelia Tekad Tuerah 18219056</p>
+                
+                
+                <p> &ensp;Haloo kak Aurel, apakabar...</p>
+                <p> &ensp;Jadi kakak udah baca surat ini, dengan surat ini aku pengen nyampein kalo aku nyaman sama kakak hehehe. Aku ngerasa kakak bisa jadi temen ngobrol, chat, dan curhat yang asik banget. Jujur first impression aku ke kakak sama realitanya beda banget HAHAHA, aku gak ngira kakak se-friendly ini hehe.
+                Aku harap kita bisa lebih deket lagi. </p>
+                <p> &ensp;Kapan lagi kan Ziyad serius gini hehe. Btw semangatt MSDM kader, semangat bentar lagi kuliah yeyy, semangat kita!!</p>
+                
+                
+                <p>Ikan hiu makan tomat (cakeppp)</p>
+                <p>Boleh gak aku jadi adek asuh kakak :) </p>
+                </div>
+                </div>
+                </div>
+
+
+<div class="hidden" id="option">
+                <div class="row">
+                <div class="col-md-2 col-sm-2 col-lg-2"></div>
+                <div class="col-md-8 col-sm-8 col-lg-8">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                    <button id="mau" onClick="yes()" type="button" style= "background-color: #6c757d; color: white" id="tidak" class="btn w-100 border m-1 p-1">MAU!!</button>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <button style= "background-color: #6c757d; color: white" id="tidak" class="btn w-100 border m-1 p-1">ngak dulu :(</button>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <button id="nanti" onClick="later()" type="button" style= "background-color: #6c757d; color: white" id="tidak" class="btn w-100 border m-1 p-1">Nanti ya jawabnya</button>
+                            </div>
+                    </div>
+                    </div>
+                <div class="col-md-0 col-sm-0 col-lg-2"></div>    
+                </div>
+            </div>
+<div id="messageMau" class="hidden">
+    <div class="row justify-content-center">
+    <div class="col-8 text-center border">
+        <p> WAHH, SENENG BANGETTT, makasih banget kakk, artinya kita bisa makin dekett, ayo ketemu offline >.< </p>
+<p> Kasihtau ziyadnya nanti aja yaa biar penasaran xixi </p>
+<p> btw sorry bangett websitenya masih jelek hehehe, aku baru banget belajar css, js, sama framework bootstrap jadi masih struggle T_T, tapi mau pamer ini aku beneran ngoding sendiri xixixi </p>
+
+    </div>
+    </div>
+    </div>
+    <div id="messageNanti" class="hidden">
+        <div class="row justify-content-center">
+        <div class="col-8 text-center border">
+            <p> Wahh, jadi deg-degan, tapi gapapaa, the choice is yours kakk hehehe. Have a nice day!! </p>
+            <p> btw sorry bangett websitenya masih jelek hehehe, aku baru banget belajar css, js, sama framework bootstrap jadi masih struggle T_T, tapi mau pamer ini aku beneran ngoding sendiri xixixi </p>
+
+    
+        </div>
+        </div>
+        </div>
+
+            <div class="row">
+                <div class="col-12" style="height: 100px"></div>
+            </div>
+            </div>
+
+            
+    </div>
+<script>
+    function show(el) {
+            var pesan = document.getElementById("message");
+            var pilihan =  document.getElementById("option");
+            pesan.classList.remove("hidden");
+            pilihan.classList.remove("hidden");
+
+        }
+    function yes() {
+        var pilihanMau =  document.getElementById("messageMau");
+        var pilihanNanti =  document.getElementById("messageNanti");
+        if (pilihanMau.className == "hidden") {pilihanMau.classList.remove("hidden")} else {pilihanMau.classList.add("hidden")}
+        if (pilihanNanti.className != "hidden") {pilihanNanti.classList.add("hidden")}
+    }
+
+    function later() {
+        var pilihanMau =  document.getElementById("messageMau");
+        var pilihanNanti =  document.getElementById("messageNanti");
+        if (pilihanNanti.className == "hidden") {pilihanNanti.classList.remove("hidden")} else {pilihanNanti.classList.add("hidden")};
+        if (pilihanMau.className != "hidden") {pilihanMau.classList.add("hidden")}
+    }
+</script>
+    <script src="bootstrap-5.0.2/dist/js/bootstrap.bundle.js">
+    </script>
+</body>
+</html>
