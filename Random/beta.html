@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apaya</title>
+<link rel="stylesheet" href="styles.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body style="background-image: url('bg.jpg'); background-repeat: repeat">
+    <!-- HEADER-->
+    <div class="header">
+        <div class="container">
+            <div class="row custom-row-header align-items-center">
+                <div class="col-6">
+                        <div class="text-header" >Webnya Ziyad</div>
+                    </div>
+                <div class="col-6">
+                    <a href="http://line.me/ti/p/~ziyaddhrf21" target="_blank">
+                    <img src="icon_line.png" class="img-fluid mini-icon" alt="Image" >
+                    </a>
+                    <a href="https://Instagram.com/ziyaddhrf/" target="_blank">
+                    <img src="icon_ig.png" class="img-fluid mini-icon" alt="Image">
+                    </a>
+                    <a href="https://twitter.com/zeezyzie/" target="_blank">
+                        <img src="icon_twitter.png" class="img-fluid mini-icon" alt="Image">
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICATION -->
+    <div class="notif">
+        <div class="container">
+            <div class="row custom-row-body">
+                <div class="col-2">
+                </div>
+
+                <div class="col-8">
+                    <div class="row custom-row-middle pt-3 mt-5">
+                        <div class="col-12">
+                        <div class="text-notif">
+                            You have a message!! &nbsp;
+                            <small class="read" onclick="show()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#0099BE" class="bi bi-envelope svg-custom" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                </svg>
+                                Read
+                            </small>
+                        </div>
+                        </div>
+            <div id="pesan" class="d-none">
+                        <div class="col-12 border border-2 border-info mt-5">
+                            <div class="message">
+                                <h3 class="text-center"><small class="text-muted">Sebuah surat</small></h3>
+                <p style="margin-top:40px">Dari: Ziyad Dhia Rafi, NIM 16520263 eh 13520064</p>
+                <p>Untuk: ****************************</p>
+                
+                
+                <p> Haloo kak *****, apakabar...</p>
+                <p> Jadi kakak udah baca surat ini, dengan surat ini aku pengen nyampein kalo aku nyaman sama kakak hehehe. Aku ngerasa kakak bisa jadi temen ngobrol, chat, dan curhat yang asik banget. Jujur first impression aku ke kakak sama realitanya beda banget HAHAHA, aku gak ngira kakak se-friendly ini hehe.
+                Aku harap kita bisa lebih deket lagi. </p>
+                <p> Kapan lagi kan Ziyad serius gini hehe. Btw semangatt ********, semangat bentar lagi kuliah yeyy, semangat kita!!</p>
+                
+                
+                <p>Ikan hiu makan tomat (cakeppp)</p>
+                <p>Boleh gak aku jadi adek asuh kakak </p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="note mt-2">
+                                *pilih aja kak, gak auto submit kok
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="options">
+                            <div class="row custom-row-options">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-4" style="margin-top: 5px;">
+                                    <button class="option-yes w-100" type="button" onclick="yes()">MAU!</button>
+                                    </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-4" style="margin-top: 5px;">
+                                    <button class="option-later w-100" type="button" onclick="later()">nanti ya jawabnya</button>
+                                    </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-4" style="margin-top: 5px;">
+                                    <div class="hehe">
+                                        &emsp;HEHE :D
+                                    </div>
+                                    <button class="option-no w-100" type="button">nggak :(</button>
+                                    
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="messageYes" class="d-none">
+                        <div class="col-12 border mt-3 border-info">
+                            <div class="message-yes">
+                                <p> WAHH, SENENG BANGETTT, makasih banget kakk, artinya kita bisa makin dekett, ayo ketemu offline <span style="white-space: nowrap;">&#62;.&#60;</span> </p>
+                                <p> Kasihtau ziyadnya nanti aja yaa biar penasaran xixi </p>
+                                <p> btw sorry bangett websitenya masih jelek hehehe, aku baru banget belajar css, js, sama framework bootstrap jadi masih struggle T_T, tapi mau pamer ini aku beneran ngoding sendiri xixixi </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="messageLater" class="d-none">
+                        <div class="col-12 border mt-3 border-info">
+                            <div class="message-later">
+                                <p> Wahh, jadi deg-degan, tapi gapapaa, the choice is yours kakk hehehe. Have a nice day!! </p>
+                                <p> btw sorry bangett websitenya masih jelek hehehe, aku baru banget belajar css, js, sama framework bootstrap jadi masih struggle T_T, tapi mau pamer ini aku beneran ngoding sendiri xixixi </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+
+                    <!-- BLANK SPACE-->
+                    <div class="blank">
+                    </div>
+                </div>
+
+                <div class="col-2 border">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        function show() {
+                var pesan = document.getElementById("pesan");
+                pesan.classList.remove("d-none");
+    
+            }
+        function yes() {
+            var pilihanMau =  document.getElementById("messageYes");
+            var pilihanNanti =  document.getElementById("messageLater");
+            if (pilihanMau.className == "d-none") {pilihanMau.classList.remove("d-none")} else {pilihanMau.classList.add("d-none")}
+            if (pilihanNanti.className != "d-none") {pilihanNanti.classList.add("d-none")}
+        }
+    
+        function later() {
+            var pilihanMau =  document.getElementById("messageYes");
+            var pilihanNanti =  document.getElementById("messageLater");
+            if (pilihanNanti.className == "d-none") {pilihanNanti.classList.remove("d-none")} else {pilihanNanti.classList.add("d-none")};
+            if (pilihanMau.className != "d-none") {pilihanMau.classList.add("d-none")}
+        }
+    </script>
+
+</body>
+</html>
