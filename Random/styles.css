@@ -97,8 +97,26 @@ p {
 .message {
     padding-left: 15px;
     padding-right: 15px;
+    position: relative;
 }
 p {
     text-align: justify;
 }
-
+.face_aurel {
+    float: left;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    width: 20%;
+}
+.face_ziyad {
+    float: right;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    width: 20%;
+}
+.little-note {
+    margin-top: 70px;
+    font-size: 80%;
+}
