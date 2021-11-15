@@ -36,6 +36,7 @@
     </div>
 
     <!-- NOTIFICATION -->
+    
     <div class="notif">
         <div class="container">
             <div class="row custom-row-body">
@@ -56,79 +57,9 @@
                         </div>
                         </div>
             <div id="pesan" class="d-none">
-                        <div class="col-12 border border-2 border-info mt-5">
-                            <div class="message">
-                                <h3 class="text-center"><small class="text-muted">Sebuah surat</small></h3>
-                                <div class="face">
-                                <img src="face_aurel_square.png" class="face_aurel" alt="Avatar">
-                                <img src="face_ziyad_square.png" class="face_ziyad" alt="Avatar">
-                                
-                                </div>
-                <div class="little-note">*izin crop hehe</div>
-                <p style="clear: left;">Dari: Ziyad Dhia Rafi, NIM 16520263 eh 13520064</p>
-                <p>Untuk: Patricia Aurelia Tekad Tuerah, NIM 18219056</p>
-                <p>-------</p>
-                
-                <p style="display: none">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <p> Haloo kak Aurell!!</p>
-                <p style="display: none">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <p> Jadi kakak udah baca surat ini, dengan surat ini aku pengen nyampein kalo aku nyaman sama kakak hehehe. Aku ngerasa kakak bisa jadi temen ngobrol, chat, dan curhat yang asik banget. Jujur first impression aku ke kakak sama realitanya beda banget HAHAHA, aku gak ngira kakak se-friendly ini hehe.
-                Aku harap kita bisa lebih deket lagi. </p>
-                <p> Kapan lagi kan Ziyad serius gini hehe. Btw semangatt MSDM kader hehhe, semangat bentar lagi kuliah yeyy, semangat kita!!</p>
-                
-                
-                <p>Ikan hiu makan tomat (cakeppp)</p>
-                <p>Boleh gak aku jadi adek asuh kakak </p>
-                            </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BBJa32lCaaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                        <div class="col-12">
-                            <div class="note mt-2">
-                                *pilih aja kak, gak auto submit kok
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="options">
-                            <div class="row custom-row-options">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-4" style="margin-top: 5px; margin-bottom: 5px;">
-                                    <button class="option-yes w-100" type="button" onclick="yes()">MAU!</button>
-                                    </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-4" style="margin-top: 5px; margin-bottom: 5px;">
-                                    <button class="option-later w-100" type="button" onclick="later()">nanti ya jawabnya</button>
-                                    </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-4" style="margin-top: 5px; margin-bottom: 5px;">
-                                    <div class="hehe">
-                                        &emsp;HEHE :D
-                                    </div>
-                                    <button class="option-no w-100" type="button">nggak :(</button>
-                                    
-                                    </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="messageYes" class="d-none">
-                        <div class="col-12 border mt-3 border-info">
-                            <div class="message-yes">
-                                <p> WAHH, SENENG BANGETTT &#60;33, makasih banget kakk, artinya kita bisa makin dekett, ayo ketemu offline <span style="white-space: nowrap;">&#62;.&#60;</span> </p>
-                                <p> Kasihtau ziyadnya nanti aja yaa biar penasaran xixi </p>
-                                <p> btw sorry bangett websitenya masih jelek hehehe, aku baru banget belajar css, js, sama framework bootstrap jadi masih struggle T_T, tapi mau pamer ini aku beneran ngoding sendiri xixixi </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="messageLater" class="d-none">
-                        <div class="col-12 border mt-3 border-info">
-                            <div class="message-later">
-                                <p> Wahh, jadi deg-degan, tapi gapapaa, the choice is yours kakk hehehe. Have a nice day!! </p>
-                                <p> btw sorry bangett websitenya masih jelek hehehe, aku baru banget belajar css, js, sama framework bootstrap jadi masih struggle T_T, tapi mau pamer ini aku beneran ngoding sendiri xixixi </p>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
+                        
                     
 
                     <!-- BLANK SPACE-->
@@ -152,17 +83,11 @@
     
             }
         function yes() {
-            var pilihanMau =  document.getElementById("messageYes");
-            var pilihanNanti =  document.getElementById("messageLater");
-            if (pilihanMau.className == "d-none") {pilihanMau.classList.remove("d-none")} else {pilihanMau.classList.add("d-none")}
-            if (pilihanNanti.className != "d-none") {pilihanNanti.classList.add("d-none")}
+         
         }
     
         function later() {
-            var pilihanMau =  document.getElementById("messageYes");
-            var pilihanNanti =  document.getElementById("messageLater");
-            if (pilihanNanti.className == "d-none") {pilihanNanti.classList.remove("d-none")} else {pilihanNanti.classList.add("d-none")};
-            if (pilihanMau.className != "d-none") {pilihanMau.classList.add("d-none")}
+           
         }
     </script>
 
